@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bean & Brew - Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #fdf6f0;
+            color: #333;
+        }
+
+        /* Header / Hero */
+        header {
+            height: 100vh;
+            background: url('https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+
+        header h1 {
+            font-size: 4em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+        }
+
+        header p {
+            font-size: 1.5em;
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+        }
+
+        .btn {
+            background: #ff7f50;
+            color: white;
+            padding: 15px 35px;
+            margin: 10px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #ff5722;
+        }
+
+        /* Features Section */
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            padding: 80px 20px;
+            background-color: #fff5ee;
+        }
+
+        .feature-card {
+            background: #fff;
+            width: 280px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            padding: 30px 20px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .feature-card h3 {
+            color: #6f4e37;
+            margin-bottom: 15px;
+        }
+
+        .feature-card p {
+            font-size: 0.95em;
+            line-height: 1.5;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #6f4e37;
+            color: white;
+        }
+
+        /* Responsive */
+        @media (max-width: 900px) {
+            .features {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            header h1 {
+                font-size: 3em;
+            }
+
+            header p {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <header>
+        <h1>Bean & Brew</h1>
+        <p>Delight in every sip of premium coffee</p>
+        <a href="#menu" class="btn">Explore Menu</a>
+        <a href="#contact" class="btn">Contact Us</a>
+    </header>
+
+    <!-- Features Section -->
+    <section class="features" id="menu">
+        <div class="feature-card">
+            <h3>Fresh Coffee</h3>
+            <p>Enjoy our freshly brewed coffee made from premium beans for the perfect taste every time.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Cozy Ambience</h3>
+            <p>Relax in our beautifully decorated café with a friendly and warm atmosphere.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Quick Service</h3>
+            <p>Order your favorite coffee and snacks and get it served quickly without any delay.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <p>© 2025 Bean & Brew | Contact: info@beanandbrew.com | ‪+91 12345 67890‬</p>
+    </footer>
+
+</body>
+</html>
